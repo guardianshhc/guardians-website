@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guardians Home Healthcare provides quality skilled nursing, physical therapy, occupational therapy, and speech therapy services in Cleveland, Ohio. Expert home healthcare bringing care to your comfort.">
+    <meta name="keywords" content="home healthcare, skilled nursing, physical therapy, occupational therapy, speech therapy, Cleveland Ohio, home health services">
+    <title>Guardians Home Healthcare | Quality Care From The Comfort of Home | Cleveland, OH</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <img src="images/logo.png" alt="Guardians Home Healthcare Logo" class="nav__logo-img">
+                <span class="nav__logo-text">GUARDIANS HOME<br><span class="logo-subtitle">HEALTHCARE</span></span>
+            </a>
+            <ul class="nav__list" id="navList">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#services" class="nav__link">Services</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#why-us" class="nav__link">Why Choose Us</a></li>
+                <li><a href="#contact" class="nav__link nav__link--cta">Contact Us</a></li>
+            </ul>
+            <div class="nav__toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Background Image -->
+    <section class="hero" id="home">
+        <div class="hero__background"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+            <div class="hero__text">
+                <h1 class="hero__title">Quality Care From The Comfort of Home</h1>
+                <p class="hero__subtitle">Compassionate skilled nursing and therapy services in Cleveland, Ohio and surrounding areas. Let us bring the care you need to the comfort of your home.</p>
+                <div class="hero__buttons">
+                    <a href="#contact" class="btn btn--white">Get Started Today</a>
+                    <a href="tel:216-538-3818" class="btn btn--outline-white">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        (216) 538-3818
+                    </a>
+                </div>
+                <div class="hero__trust">
+                    <div class="trust-badge">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        <span>Licensed & Insured</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <span>Experienced Team</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14" stroke="#5DBAAE" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span>24/7 Availability</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__image">
+                <div class="hero__card">
+                    <div class="card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <h3>Request Care Today</h3>
+                    <p>Our team is ready to help you or your loved one receive quality care at home.</p>
+                    <a href="#contact" class="btn btn--primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Our Services</h2>
+                <p class="section__subtitle">Comprehensive home healthcare services tailored to your unique needs</p>
+            </div>
+            <div class="services__grid">
+                <!-- Skilled Nursing -->
+                <div class="service-card">
+                    <img src="images/skilled-nursing.png" alt="Skilled Nursing Care" class="service-card__image">
+                    <h3 class="service-card__title">Skilled Nursing Care</h3>
+                    <p class="service-card__description">Personalized nursing care plans tailored to your medical needs, delivered by experienced registered nurses.</p>
+                    <ul class="service-card__features">
+                        <li>Medication Management</li>
+                        <li>Wound Care</li>
+                        <li>Chronic Condition Support</li>
+                        <li>Health Assessments</li>
+                    </ul>
+                </div>
+
+                <!-- Physical Therapy -->
+                <div class="service-card">
+                    <img src="images/physical-therapy.png" alt="Physical Therapy" class="service-card__image">
+                    <h3 class="service-card__title">Physical Therapy (PT)</h3>
+                    <p class="service-card__description">Restore mobility, strength, and independence with our expert physical therapists.</p>
+                    <ul class="service-card__features">
+                        <li>Mobility Training</li>
+                        <li>Strength Building</li>
+                        <li>Balance & Coordination</li>
+                        <li>Pain Management</li>
+                    </ul>
+                </div>
+
+                <!-- Occupational Therapy -->
+                <div class="service-card">
+                    <img src="images/occupational-therapy.png" alt="Occupational Therapy" class="service-card__image">
+                    <h3 class="service-card__title">Occupational Therapy (OT)</h3>
+                    <p class="service-card__description">Regain the skills you need for daily living with personalized occupational therapy.</p>
+                    <ul class="service-card__features">
+                        <li>Daily Living Skills</li>
+                        <li>Cognitive Training</li>
+                        <li>Home Safety Assessments</li>
+                        <li>Adaptive Equipment Training</li>
+                    </ul>
+                </div>
+
+                <!-- Speech Therapy (SLP) -->
+                <div class="service-card">
+                    <img src="images/speech-therapy.png" alt="Speech Therapy Services" class="service-card__image">
+                    <h3 class="service-card__title">Speech Therapy (SLP)</h3>
+                    <p class="service-card__description">Improve communication, speech, and swallowing with our certified speech-language pathologists.</p>
+                    <ul class="service-card__features">
+                        <li>Speech & Language</li>
+                        <li>Swallowing Therapy</li>
+                        <li>Cognitive Communication</li>
+                        <li>Voice Disorders</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section--gray" id="about">
+        <div class="container">
+            <div class="about__content">
+                <div class="about__text">
+                    <h2 class="section__title" style="text-align: left;">About Guardians Home Healthcare</h2>
+                    <p class="about__description">At Guardians Home Healthcare, we are dedicated to providing exceptional home healthcare services that prioritize the dignity, comfort, and well-being of every individual we serve.</p>
+                    <p class="about__description">Our commitment is to treat each client like family, delivering compassionate, personalized care tailored to their unique needs. We work closely with families to ensure peace of mind, offering professional, reliable support that enables loved ones to maintain their independence in the familiar comfort of home.</p>
+                    <div class="about__features">
+                        <div class="about__feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Quality, Respect, and Integrity in Every Aspect of Care</span>
+                        </div>
+                        <div class="about__feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Experienced RNs, PTs, OTs, and SLPs</span>
+                        </div>
+                        <div class="about__feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Serving Cleveland, Ohio and Surrounding Areas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__image">
+                    <div class="about__card">
+                        <h3>Our Commitment to You</h3>
+                        <p>Fostering trust and building lasting relationships with those who rely on us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section" id="why-us">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Why Choose Us?</h2>
+                <p class="section__subtitle">Discover the Guardians Home Healthcare difference</p>
+            </div>
+            <div class="why-choose__grid">
+                <div class="feature-card">
+                    <div class="feature-card__number">1</div>
+                    <h3 class="feature-card__title">Experienced, Compassionate Care</h3>
+                    <p class="feature-card__text">Our team of highly skilled RNs, PTs, OTs, and SLPs is dedicated to providing expert care with a focus on compassion, respect, and your loved one's comfort.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card__number">2</div>
+                    <h3 class="feature-card__title">Comprehensive Services</h3>
+                    <p class="feature-card__text">In addition to skilled nursing care, we offer therapy services including PT, OT, and SLP services, tailored to help clients improve mobility and enhance daily living.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card__number">3</div>
+                    <h3 class="feature-card__title">Personalized Care Plans</h3>
+                    <p class="feature-card__text">We collaborate with you, your family, and your healthcare providers to design a customized care plan that addresses both medical needs and therapeutic goals.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card__number">4</div>
+                    <h3 class="feature-card__title">Integrated Approach</h3>
+                    <p class="feature-card__text">Our skilled nurses and therapists work together to ensure seamless coordination, addressing both clinical and rehabilitation needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card__number">5</div>
+                    <h3 class="feature-card__title">24/7 Availability</h3>
+                    <p class="feature-card__text">Whether you need skilled nursing care, therapy services, or a combination of both, we are available around the clock to provide the support you need.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card__number">6</div>
+                    <h3 class="feature-card__title">Focus on Independence</h3>
+                    <p class="feature-card__text">Our goal is to help clients regain independence and achieve their highest functional potential, reducing hospital visits and improving quality of life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section--gray" id="contact">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Contact Us Today</h2>
+                <p class="section__subtitle">Ready to get started? Reach out to our team for a consultation.</p>
+            </div>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <div class="contact__item-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact__item-content">
+                            <h4>Our Office</h4>
+                            <p>1468 West 9th Street, Suite 100<br>Cleveland, Ohio 44113</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__item-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact__item-content">
+                            <h4>Phone</h4>
+                            <p><a href="tel:216-538-3818">(216) 538-3818</a></p>
+                            <p><a href="tel:216-288-0668">(216) 288-0668</a></p>
+                            <p>Fax: (440) 426-1138</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__item-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact__item-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:stroychansky@guardianshhc.com">stroychansky@guardianshhc.com</a></p>
+                            <p><a href="mailto:dzovko@guardianshhc.com">dzovko@guardianshhc.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__item-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact__item-content">
+                            <h4>Hours</h4>
+                            <p>24/7 Care Available<br>Office: Mon-Fri 9AM-5PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__form">
+                    <form id="contactForm">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="phone" class="form__label">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="service" class="form__label">Service Needed</label>
+                            <select id="service" name="service" class="form__select">
+                                <option value="">Select a service...</option>
+                                <option value="skilled-nursing">Skilled Nursing</option>
+                                <option value="physical-therapy">Physical Therapy</option>
+                                <option value="occupational-therapy">Occupational Therapy</option>
+                                <option value="speech-therapy">Speech Therapy (SLP)</option>
+                                <option value="multiple">Multiple Services</option>
+                                <option value="consultation">General Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label">Message</label>
+                            <textarea id="message" name="message" class="form__textarea" placeholder="Tell us about your care needs..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <img src="images/logo.png" alt="Guardians Home Healthcare" class="footer__logo-img">
+                        <span class="footer__logo-text">GUARDIANS HOME<br>HEALTHCARE</span>
+                    </div>
+                    <p class="footer__description">Providing quality skilled nursing and therapy services in Cleveland, Ohio and surrounding areas. Let us bring the care you need to the comfort of your home.</p>
+                </div>
+                <div class="footer__nav">
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__services">
+                    <h4 class="footer__title">Services</h4>
+                    <ul class="footer__links">
+                        <li><a href="#services">Skilled Nursing</a></li>
+                        <li><a href="#services">Physical Therapy</a></li>
+                        <li><a href="#services">Occupational Therapy</a></li>
+                        <li><a href="#services">Speech Therapy (SLP)</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <h4 class="footer__title">Contact</h4>
+                    <ul class="footer__links">
+                        <li><a href="tel:216-538-3818">(216) 538-3818</a></li>
+                        <li><a href="tel:216-288-0668">(216) 288-0668</a></li>
+                        <li><a href="mailto:stroychansky@guardianshhc.com">stroychansky@guardianshhc.com</a></li>
+                 
