@@ -75,13 +75,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const payload = Object.fromEntries(formData);
 
     const response = await fetch(CONTACT_ENDPOINT, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify(payload)
-    });
+  method: 'POST',
+  body: formData,
+  headers: {
+    'Accept': 'application/json'
+  }
+});
+
 
     if (!response.ok) throw new Error('Submission failed');
 
