@@ -60,22 +60,41 @@ document.addEventListener('DOMContentLoaded', function() {
     // Contact Form Handling
     // ========================================
     const contactForm = document.getElementById('contactForm');
-    
+    const CONTACT_ENDPOINT = 'https://formspree.io/f/xlgnggwj';
+
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
-            
-            // Here you would typically send this to a server
-            // For now, we'll just show a success message
-            console.log('Form submitted:', data);
-            
-            alert('Thank you for your message! We will contact you shortly.');
-            contactForm.reset();
-        });
+        contactForm.addEventListener('submit', async function (e) {
+  e.preventDefault();
+
+  const submitBtn = contactForm.querySelector('button[type="submit"]');
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending...';
+
+  try {
+    const formData = new FormData(contactForm);
+    const payload = Object.fromEntries(formData);
+
+    const response = await fetch(CONTACT_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    });
+
+    if (!response.ok) throw new Error('Submission failed');
+
+    alert('Thank you! Your message was sent.');
+    contactForm.reset();
+  } catch (error) {
+    alert('Sorry — something went wrong. Please call the phone number listed on the site.');
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Message';
+  }
+});
+
     }
 
     // ========================================
