@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   try {
     const formData = new FormData(contactForm);
-    const payload = Object.fromEntries(formData);
 
     const response = await fetch(CONTACT_ENDPOINT, {
   method: 'POST',
